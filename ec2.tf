@@ -26,7 +26,7 @@ resource "aws_instance" "private_ec2" {
 
 # IAM Role for EC2 Instances to Access S3
 resource "aws_iam_role" "ec2_role" {
-  name = "jenkins_rolefsi"
+  name = "newpro"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
