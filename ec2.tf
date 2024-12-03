@@ -26,7 +26,7 @@ resource "aws_instance" "private_ec2" {
 
 # IAM Role for EC2 Instances to Access S3
 resource "aws_iam_role" "ec2_role" {
-  name = "jenkins_role_3"
+  name = "jenkins_rolefsi"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
@@ -46,6 +46,6 @@ resource "aws_iam_role_policy_attachment" "ec2_s3_access" {
 }
 
 resource "aws_iam_instance_profile" "ec2_profile" {
-  name = "ec2_profile_new_3"
+  name = "ec2_profilefsi"
   role = aws_iam_role.ec2_role.name
 }
