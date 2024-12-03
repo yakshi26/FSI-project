@@ -17,7 +17,7 @@ variable "private_subnet_cidr" {
 
 variable "ami" {
   description = "AMI ID for EC2 instances"
-  default     = "ami-0b20f552f63953f0e"  # Replace with valid AMI
+  default     = "ami-0b2cd2a95639e0e5b"  # Replace with valid AMI
 }
 
 variable "instance_type" {
@@ -32,7 +32,7 @@ variable "availability_zone" {
 
 variable "s3_bucket_name" {
   description = "S3 Bucket Name"
-  default     = "finalbucket78334"
+  default     = "finalbucketfsi03"
 }
 
 variable "region" {
